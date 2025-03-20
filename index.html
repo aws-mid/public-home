@@ -8,6 +8,9 @@
   <link rel="icon" href="./assets/aws-purple.png" />
   <style>
     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
       scroll-behavior: smooth;
     }
@@ -20,6 +23,7 @@
     header {
       background: linear-gradient(135deg, #28104E, #6237A0, #9754CB, #DEACF5);
       color: white;
+      padding: 30px;
       text-align: center;
       font-size: 24px;
       font-weight: bold;
@@ -34,6 +38,7 @@
     }
 
     .section {
+      padding: 50px 20px;
       text-align: center;
       transition: all 0.6s ease-in-out;
     }
@@ -41,8 +46,10 @@
     .banner {
       background: linear-gradient(135deg, #ffc05b, #f96846, #ff5500);
       color: white;
+      padding: 50px;
       text-align: center;
       border-radius: 10px;
+      margin: 50px auto;
       max-width: 800px;
       box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     }
@@ -52,7 +59,9 @@
     }
 
     .banner .cta {
+      margin-bottom: 20px;
       display: inline-block;
+      padding: 12px 25px;
       background: white;
       color: #ff5500;
       text-decoration: none;
@@ -70,6 +79,7 @@
       display: flex;
       overflow-x: auto;
       gap: 10px;
+      padding: 20px;
       scroll-snap-type: x mandatory;
     }
 
@@ -89,6 +99,7 @@
 
     .carousel-container {
       max-width: 1300px;
+      margin: auto;
     }
 
     .carousel-container::before,
@@ -114,6 +125,7 @@
 
     .contact-section {
       background: #fff;
+      padding: 40px 20px;
       border-radius: 10px;
       box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
       max-width: 600px;
@@ -135,6 +147,7 @@
 
     footer {
       text-align: center;
+      padding: 20px;
       background: linear-gradient(135deg, #28104E, #6237A0, #9754CB, #DEACF5);
       color: white;
     }
