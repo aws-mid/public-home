@@ -21,11 +21,13 @@
     }
 
     header {
-      background: #232f3e;
+      background: linear-gradient(135deg, #232f3e, #3b4a5a);
       color: white;
       padding: 20px;
       text-align: center;
       font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .section {
@@ -39,6 +41,45 @@
     .show {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    .mid-section {
+      background: linear-gradient(135deg, #ff9a8b, #ff6a88, #ff99ac);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 50px auto;
+      max-width: 800px;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .mid-section h4 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .mid-section p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .mid-section .cta-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: white;
+      color: #ff6a88;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .mid-section .cta-button:hover {
+      background: #ffd7e3;
+      transform: scale(1.05);
     }
 
     .carousel {
@@ -55,7 +96,35 @@
       object-fit: cover;
       scroll-snap-align: center;
       border-radius: 10px;
-      background: #ccc;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-section {
+      background: #fff;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .contact-section a {
+      color: #ff6a88;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .contact-section a:hover {
+      color: #d13e60;
+      text-decoration: underline;
     }
 
     footer {
@@ -70,16 +139,21 @@
 
 <body>
 
-  <header>AWS Community - Yucatan</header>
-
-  <div class="section">Welcome to our AWS Community! Connect, learn, and grow together.</div>
+  <header>AWS Community - Yucatán</header>
 
   <div class="section">
-    <h4>Join our meetups, workshops, and networking sessions.</h4>
+    <h2>Welcome to our AWS Community!</h2>
+    <p>Connect, learn, and grow together with passionate cloud enthusiasts.</p>
+  </div>
+
+  <div class="mid-section">
+    <h4>🚀 Join our meetups, workshops, and networking sessions! 🚀</h4>
+    <p>Expand your knowledge, collaborate with experts, and be part of something big.</p>
+    <a href="#contact" class="cta-button">Join Us Now</a>
   </div>
 
   <div class="section">
-    <h2>AWS Talks</h2>
+    <h2>Our Sessions</h2>
     <div class="carousel">
       <img src="./assets/pics/recent-talk/WhatsApp Image 2024-11-21 at 11.26.27 PM (1).jpeg" alt="Event Photo 1">
       <img src="./assets/pics/women-talk/WhatsApp Image 2025-03-08 at 1.36.43 PM.jpeg" alt="Event Photo 6">
@@ -92,13 +166,13 @@
     </div>
   </div>
 
-  <div class="section">
+  <div id="contact" class="section contact-section">
     <h2>Get Involved</h2>
-    <p>Join our community and contribute to cloud innovation</p>
+    <p>Join our community and contribute to cloud innovation!</p>
     <a href="mailto:aws.ug.mid@gmail.com">aws.ug.mid@gmail.com</a>
   </div>
 
-  <footer>© 2025 AWS Community - Yucatan. All rights reserved.</footer>
+  <footer>© 2025 AWS Community - Yucatán. All rights reserved.</footer>
 
   <script>
     document.addEventListener("scroll", function () {
