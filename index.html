@@ -99,11 +99,12 @@
 
     .carousel-container {
       max-width: 1300px;
+      position: relative;
       margin: auto;
     }
 
-    .carousel-container::before,
-    .carousel-container::after {
+    .carousel::before,
+    .carousel::after {
       content: "";
       position: absolute;
       top: 0;
@@ -113,12 +114,12 @@
       pointer-events: none;
     }
 
-    .carousel-container::before {
+    .carousel::before {
       left: 0;
       background: linear-gradient(to right, rgba(244, 244, 244, 1), rgba(244, 244, 244, 0));
     }
 
-    .carousel-container::after {
+    .carousel::after {
       right: 0;
       background: linear-gradient(to left, rgba(244, 244, 244, 1), rgba(244, 244, 244, 0));
     }
