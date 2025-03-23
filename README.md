@@ -3,6 +3,7 @@
 # AWS MID
 
 _The source code of the public website for the AWS community at Merida, Yucatan._
+Visit at [https://aws-mid.dev](https://aws-mid.dev). 
 
 </header>
 
